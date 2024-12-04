@@ -62,3 +62,13 @@ print(f"Hasil panen jagung dari {data_panen['lokasi2']['nama_lokasi']}: {jumlah_
 nama_lokasi3 = data_panen['lokasi3']['nama_lokasi']
 print(f"Nama lokasi dari lokasi3: {nama_lokasi3}")
 
+# 4. Masukkan hasil panen padi dan kedelai ke dalam variabel yang berbeda
+hasil_padi_lokasi1 = data_panen['lokasi1']['hasil_panen']['padi']
+hasil_kedelai_lokasi1 = data_panen['lokasi1']['hasil_panen']['kedelai']
+
+hasil_padi_lokasi2 = data_panen['lokasi2']['hasil_panen']['padi']
+hasil_kedelai_lokasi2 = data_panen['lokasi2']['hasil_panen']['kedelai']
+
+hasil_padi_lokasi3 = data_panen['lokasi3']['hasil_panen']['padi']
+hasil_kedelai_lokasi3 = data_panen['lokasi3']['hasil_panen']['kedelai']
+
