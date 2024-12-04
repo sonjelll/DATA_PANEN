@@ -72,3 +72,12 @@ hasil_kedelai_lokasi2 = data_panen['lokasi2']['hasil_panen']['kedelai']
 hasil_padi_lokasi3 = data_panen['lokasi3']['hasil_panen']['padi']
 hasil_kedelai_lokasi3 = data_panen['lokasi3']['hasil_panen']['kedelai']
 
+# 5. Buat percabangan untuk memeriksa kondisi lokasi
+for lokasi, data in data_panen.items():
+    padi = data['hasil_panen']['padi']
+    jagung = data['hasil_panen']['jagung']
+    if padi > 1300 or jagung > 800:
+        print(f"{data['nama_lokasi']} memerlukan perhatian khusus.")
+    else:
+        print(f"{data['nama_lokasi']} dalam kondisi baik.")
+
