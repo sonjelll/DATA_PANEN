@@ -49,5 +49,8 @@ data_panen = {
     }
 }
 
-# Ini adalah perubahan untuk branch Baru
-print("Branch Baru Aktif")
+# 1. Tampilkan seluruh data dari data_panen
+print("Seluruh data panen:")
+for lokasi, data in data_panen.items():
+    print(f"{data['nama_lokasi']}: {data['hasil_panen']}")
+
