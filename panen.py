@@ -81,3 +81,13 @@ for lokasi, data in data_panen.items():
     else:
         print(f"{data['nama_lokasi']} dalam kondisi baik.")
 
+# 6. Buat variabel terpisah untuk menyimpan jumlah hasil panen padi dan kedelai dari setiap lokasi.
+    # Variabel untuk menyimpan jumlah hasil panen padi
+hasil_padi = {
+    lokasi: data["padi"] for lokasi, data in data_panen.items()
+}
+
+# Variabel untuk menyimpan jumlah hasil panen kedelai
+hasil_kedelai = {
+    lokasi: data["kedelai"] for lokasi, data in data_panen.items()
+}
